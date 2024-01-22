@@ -1080,7 +1080,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="294" parent="1" name="checkpoint4">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-01-22.12:44:17</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-01-22.12:56:18</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="295" parent="1" name="cours_PDO">
@@ -1316,12 +1316,17 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <index id="354" parent="330" name="PRIMARY">
+    <column id="354" parent="330" name="intro">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <index id="355" parent="330" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="355" parent="330" name="PRIMARY">
+    <key id="356" parent="330" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

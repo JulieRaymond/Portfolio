@@ -29,6 +29,9 @@ class Project
     #[ORM\Column(length: 255)]
     private ?string $author = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $intro = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -90,6 +93,18 @@ class Project
     public function setAuthor(string $author): static
     {
         $this->author = $author;
+
+        return $this;
+    }
+
+    public function getIntro(): ?string
+    {
+        return $this->intro;
+    }
+
+    public function setIntro(string $intro): static
+    {
+        $this->intro = $intro;
 
         return $this;
     }
