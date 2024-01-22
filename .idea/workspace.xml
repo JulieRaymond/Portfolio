@@ -7,15 +7,9 @@
     <list default="true" id="876423cc-e272-4638-94dc-9248360fc43f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/checkpoint4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkpoint4.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c28f4611-503b-4ee5-8c8e-512de7112464.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c28f4611-503b-4ee5-8c8e-512de7112464.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_includes/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_navbar.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/_includes/_portfolioGrid.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_portfolioGrid.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +222,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705915652162</updated>
       <workItem from="1705915658350" duration="1050000" />
-      <workItem from="1705916830807" duration="9114000" />
+      <workItem from="1705916830807" duration="9736000" />
     </task>
     <servers />
   </component>

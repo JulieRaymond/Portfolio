@@ -1080,7 +1080,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="294" parent="1" name="checkpoint4">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-01-22.13:06:26</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-01-22.13:11:01</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="295" parent="1" name="cours_PDO">
