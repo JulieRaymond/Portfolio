@@ -8,8 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/checkpoint4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkpoint4.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c28f4611-503b-4ee5-8c8e-512de7112464.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c28f4611-503b-4ee5-8c8e-512de7112464.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_includes/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_navbar.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_includes/_portfolioGrid.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_portfolioGrid.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20240122124407.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20240122124838.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/usr/local/Cellar/php/8.2.10/bin/php">
     <include_path>
@@ -222,7 +227,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705915652162</updated>
       <workItem from="1705915658350" duration="1050000" />
-      <workItem from="1705916830807" duration="9736000" />
+      <workItem from="1705916830807" duration="12762000" />
     </task>
     <servers />
   </component>
