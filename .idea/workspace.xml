@@ -7,8 +7,6 @@
     <list default="true" id="876423cc-e272-4638-94dc-9248360fc43f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ProjectCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ProjectCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_includes/_modals.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_modals.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_includes/_portfolioGrid.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_portfolioGrid.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +222,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705915652162</updated>
       <workItem from="1705915658350" duration="1050000" />
-      <workItem from="1705916830807" duration="16794000" />
+      <workItem from="1705916830807" duration="17028000" />
     </task>
     <servers />
   </component>

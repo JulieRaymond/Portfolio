@@ -19,7 +19,6 @@ class ProjectCrudController extends AbstractCrudController
     public function createEntity(string $entityFqcn): Project
     {
         $project = new Project();
-        $project->setAuthor($this->getUser());
 
         return $project;
     }
