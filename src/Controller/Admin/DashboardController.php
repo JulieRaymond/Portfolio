@@ -6,9 +6,11 @@ use App\Entity\Project;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
+use EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+#[EasyAdmin]
 class DashboardController extends AbstractDashboardController
 {
     #[Route('/admin', name: 'admin')]
@@ -17,8 +19,8 @@ class DashboardController extends AbstractDashboardController
 
         // Option 1. You can make your dashboard redirect to some common page of your backend
         //
-        // $adminUrlGenerator = $this->container->get(AdminUrlGenerator::class);
-        // return $this->redirect($adminUrlGenerator->setController(OneOfYourCrudController::class)->generateUrl());
+        $adminUrlGenerator = $this->container->get(AdminUrlGenerator::class);
+        return $this->redirect($adminUrlGenerator->setController(ProjectCrudController::class)->generateUrl());
 
         // Option 2. You can make your dashboard redirect to different pages depending on the user
         //
@@ -30,7 +32,7 @@ class DashboardController extends AbstractDashboardController
         // (tip: it's easier if your template extends from @EasyAdmin/page/content.html.twig)
         //
         // return $this->render('some/path/my-dashboard.html.twig');
-        return parent::index();
+        //return parent::index();
 
     }
 
@@ -46,6 +48,6 @@ class DashboardController extends AbstractDashboardController
     {
         yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
         // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);
-        yield MenuItem::linkToCrud('Projects', 'fa fa-list', Project::class); // Ajout de cette ligne
+        yield MenuItem::linkToCrud('Projects', 'fa fa-list', Project::class);
     }
 }
