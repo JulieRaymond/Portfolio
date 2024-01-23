@@ -5,30 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="876423cc-e272-4638-94dc-9248360fc43f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/checkpoint4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkpoint4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c28f4611-503b-4ee5-8c8e-512de7112464.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c28f4611-503b-4ee5-8c8e-512de7112464.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/portfolio/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/X/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/portfolio/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/X/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/portfolio/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/X/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/portfolio/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/X/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/portfolio/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/X/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/portfolio/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/X/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/portfolio/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/X/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/portfolio/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/X/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/portfolio/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/X/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20240122141434.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20240123141944.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ProjectCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ProjectCrudController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProjectFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ProjectFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_includes/_modals.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_modals.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_includes/_portfolioGrid.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_portfolioGrid.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_includes/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +232,7 @@
       <updated>1705915652162</updated>
       <workItem from="1705915658350" duration="1050000" />
       <workItem from="1705916830807" duration="17484000" />
-      <workItem from="1706011528655" duration="6713000" />
+      <workItem from="1706011528655" duration="11322000" />
     </task>
     <servers />
   </component>

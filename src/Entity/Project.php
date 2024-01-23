@@ -141,4 +141,9 @@ class Project
     {
         return $this->imageFile;
     }
+
+    public function generateFileName(): string
+    {
+        return $this->getId() . '.jpg';
+    }
 }
