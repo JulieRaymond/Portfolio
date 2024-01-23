@@ -11,7 +11,7 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <h2 class="text-uppercase">{{ project.title|raw }}</h2>
-                                <p class="item-intro text-muted">{{ project.duration|raw }}</p>
+                                <p class="item-intro text-muted">Durée de réalisation: {{ project.duration|raw }}</p>
                                 <img class="img-fluid d-block mx-auto"
                                      src="{{ asset('images/portfolio/' ~ project.id ~ '.jpg') }}"
                                      alt="Portfolio{{ project.id }}"/>
@@ -22,7 +22,7 @@
                                         {{ project.client|raw }}
                                     </li>
                                     <li>
-                                        <strong>Category:</strong>
+                                        <strong>Auteur:</strong>
                                         {{ project.author|raw }}
                                     </li>
                                 </ul>
