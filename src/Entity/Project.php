@@ -2,11 +2,15 @@
 
 namespace App\Entity;
 
+use AllowDynamicProperties;
 use App\Repository\ProjectRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
-#[ORM\Entity(repositoryClass: ProjectRepository::class)]
+#[AllowDynamicProperties] #[ORM\Entity(repositoryClass: ProjectRepository::class)]
+#[Vich\Uploadable]
 class Project
 {
     #[ORM\Id]
@@ -31,6 +35,12 @@ class Project
 
     #[ORM\Column(length: 255)]
     private ?string $intro = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $imagePath = null;
+
+    #[Vich\UploadableField(mapping: 'project_images', fileNameProperty: 'imagePath')]
+    private ?File $imageFile = null;
 
     public function getId(): ?int
     {
@@ -107,5 +117,28 @@ class Project
         $this->intro = $intro;
 
         return $this;
+    }
+    public function getImagePath(): ?string
+    {
+        return $this->imagePath;
+    }
+
+    public function setImagePath(?string $imagePath): void
+    {
+        $this->imagePath = $imagePath;
+    }
+
+    public function setImageFile(?File $image = null): void
+    {
+        $this->imageFile = $image;
+
+        if ($image) {
+            $this->updatedAt = new \DateTimeImmutable();
+        }
+    }
+
+    public function getImageFile(): ?File
+    {
+        return $this->imageFile;
     }
 }

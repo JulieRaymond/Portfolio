@@ -5,7 +5,7 @@ namespace App\Controller\Admin;
 use App\Entity\Project;
 use Doctrine\ORM\EntityManagerInterface;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
-use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 
@@ -40,6 +40,7 @@ class ProjectCrudController extends AbstractCrudController
         // Aucune action supplémentaire nécessaire avant la suppression
         parent::deleteEntity($entityManager, $entityInstance);
     }
+
     public function configureFields(string $pageName): iterable
     {
         return [
@@ -49,6 +50,7 @@ class ProjectCrudController extends AbstractCrudController
             TextField::new('client'),
             TextField::new('author'),
             TextField::new('intro'),
+            ImageField::new('imagePath'),
         ];
     }
 }

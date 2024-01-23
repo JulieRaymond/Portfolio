@@ -3,7 +3,8 @@
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Mes projets</h2>
-            <h3 class="section-subheading text-muted">Voici mes projets, cliquez sur l'image pour obtenir tous les détails !</h3>
+            <h3 class="section-subheading text-muted">Voici mes projets, cliquez sur l'image pour obtenir tous les
+                détails !</h3>
         </div>
         <div class="row">
             {% for project in projects %}
@@ -14,7 +15,8 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="{{ asset('images/portfolio/' ~ project.id ~ '.jpg') }}" alt="Portfolio{{ project.id }}"/>
+                            <img class="img-fluid" src="{{ asset('assets/uploads/portfolio/' ~ project.id ~ '.jpg') }}"
+                                 alt="Portfolio{{ project.id }}"/>
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">{{ project.title|raw }}</div>

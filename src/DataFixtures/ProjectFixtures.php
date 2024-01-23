@@ -101,5 +101,12 @@ class ProjectFixtures extends Fixture
         $manager->persist($project9);
 
         $manager->flush();
+
+        foreach ($manager->getRepository(Project::class)->findAll() as $project) {
+            $imagePath = 'assets/uploads/X/' . $project->getId() . '.jpg';
+            $project->setImagePath($imagePath);
+        }
+
+        $manager->flush();
     }
 }
