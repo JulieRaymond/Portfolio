@@ -1,31 +1,30 @@
-{% extends 'base.html.twig' %}
-
-{% block body %}
-    {% for flashMessage in app.flashes('success') %}
-        <div class="flash-success">
-            {{ flashMessage }}
-        </div>
-    {% endfor %}
-    <div class="bg-white p-5 contact-form">
-        <div class="form-group">
-            {{ form_start(our_form) }}
-            {{ form_row(our_form.fullName, {'attr': {'class': 'form-control'}}) }}
-
-
-        </div>
-        <div class="form-group">
-            {{ form_row(our_form.email, {'attr': {'class': 'form-control'}}) }}
-
-        </div>
-        <div class="form-group">
-            {{ form_row(our_form.message, {'attr': {'class': 'form-control'}}) }}
-
-        </div>
-
-        <div class="form-group">
-            <input type="submit" value="Send" class="btn btn-primary py-3 px-5">
-        </div>
-        {{ form_end(our_form) }}
+{% for flashMessage in app.flashes('success') %}
+    <div class="flash-success">
+        {{ flashMessage }}
     </div>
-
-{% endblock %}
+{% endfor %}
+<!-- Contact form -->
+<section class="page-section bg-light" id="portfolio">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Contactez moi</h2>
+            <h3 class="section-subheading text-muted">Une question, une demande professionnelle, ou envie de partager autour du code ? Lancez vous !</h3>
+        </div>
+        <div class="bg-white p-5 contact-form">
+            {{ form_start(our_form) }}
+            <div class="form-group">
+                {{ form_row(our_form.fullName, {'attr': {'class': 'form-control', 'placeholder': 'Votre nom ici'}}) }}
+            </div>
+            <div class="form-group">
+                {{ form_row(our_form.email, {'attr': {'class': 'form-control', 'placeholder': 'Votre e-mail ici'}}) }}
+            </div>
+            <div class="form-group">
+                {{ form_row(our_form.message, {'attr': {'class': 'form-control', 'placeholder': 'Votre message ici'}}) }}
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" value="Envoyer votre message" class="btn btn-primary btn-xl text-uppercase">
+            </div>
+            {{ form_end(our_form) }}
+        </div>
+    </div>
+</section>
