@@ -16,13 +16,13 @@ class HomeController extends AbstractController
     #[Route('/', name: 'app_home')]
     public function index(Request $request, MailerInterface $mailer, ProjectRepository $projectRepository): Response
     {
-        // Récupérez vos projets depuis la base de données
+        // Récupére vos projets depuis la base de données
         $projects = $projectRepository->findAll();
 
-        // Créez le formulaire de contact
+        // Créé le formulaire de contact
         $form = $this->createForm(ContactType::class);
 
-        // Gérez la soumission du formulaire
+        // Gére la soumission du formulaire
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -37,7 +37,7 @@ class HomeController extends AbstractController
 
             $this->addFlash('success', 'Votre message a bien été envoyé, merci de votre prise de contact');
 
-            // Restez sur la page d'accueil après l'envoi du formulaire
+            // Reste sur la page d'accueil après l'envoi du formulaire
             return $this->redirectToRoute('app_home');
         }
 
