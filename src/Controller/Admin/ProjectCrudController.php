@@ -9,6 +9,8 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use Symfony\Component\Filesystem\Filesystem;
+use Vich\UploaderBundle\VichUploaderBundle;
 
 class ProjectCrudController extends AbstractCrudController
 {
@@ -34,9 +36,12 @@ class ProjectCrudController extends AbstractCrudController
     {
         parent::persistEntity($entityManager, $entityInstance);
     }
+
     public function deleteEntity(EntityManagerInterface $entityManager, $entityInstance): void
     {
-        // Aucune action supplémentaire nécessaire avant la suppression
+        $imagePath = 'public/assets/uploads/portfolio/' . $entityInstance->getId() . '.jpg';
+        $filesystem = new Filesystem();
+        $filesystem->remove($imagePath);
         parent::deleteEntity($entityManager, $entityInstance);
     }
 
