@@ -53,7 +53,6 @@ class ProjectCrudController extends AbstractCrudController
             ImageField::new('imagePath')
                 ->setUploadDir('public/assets/uploads/portfolio/') // uploader de nouvelles images
                 ->setBasePath('/assets/uploads/portfolio/') // définir l'emplacement d'origine des images
-
         ];
     }
 }
