@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Form\ContactType;
 use App\Repository\ProjectRepository;
+use App\Repository\TechnologyRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -14,10 +15,13 @@ use Symfony\Component\Mime\Email;
 class HomeController extends AbstractController
 {
     #[Route('/', name: 'app_home')]
-    public function index(Request $request, MailerInterface $mailer, ProjectRepository $projectRepository): Response
+    public function index(Request $request, MailerInterface $mailer, ProjectRepository $projectRepository, TechnologyRepository $technologyRepository): Response
     {
         // Récupére vos projets depuis la base de données
         $projects = $projectRepository->findAll();
+
+        // Récupérez toutes les technologies depuis la base de données
+        $allTechnologies = $technologyRepository->findAll();
 
         // Créé le formulaire de contact
         $form = $this->createForm(ContactType::class);
@@ -44,6 +48,7 @@ class HomeController extends AbstractController
         // Passez les projets et le formulaire à la vue Twig
         return $this->render('home/index.html.twig', [
             'projects' => $projects,
+            'allTechnologies' => $allTechnologies,
             'our_form' => $form->createView(),
         ]);
     }
