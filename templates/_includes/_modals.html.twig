@@ -12,6 +12,16 @@
                             <div class="modal-body">
                                 <h2 class="text-uppercase">{{ project.title|raw }}</h2>
                                 <p class="item-intro text-muted">Durée de réalisation: {{ project.duration|raw }}</p>
+                                <div class="wrapper">
+                                    <svg>
+                                        <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                                            {% for technology in project.technologies %}
+                                                {{ technology.name }}
+                                                {% if not loop.last %}, {% endif %}
+                                            {% endfor %}
+                                        </text>
+                                    </svg>
+                                </div>
                                 <img class="img-fluid d-block mx-auto"
                                      src="{{ asset('assets/uploads/portfolio/' ~ project.id ~ '.jpg') }}"
                                      alt="Portfolio{{ project.id }}"/>
