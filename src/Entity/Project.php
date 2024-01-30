@@ -4,6 +4,8 @@ namespace App\Entity;
 
 use AllowDynamicProperties;
 use App\Repository\ProjectRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
@@ -41,6 +43,14 @@ class Project
 
     #[Vich\UploadableField(mapping: 'project_images', fileNameProperty: 'imagePath')]
     private ?File $imageFile = null;
+
+    #[ORM\ManyToMany(targetEntity: Technology::class, mappedBy: 'project')]
+    private Collection $technologies;
+
+    public function __construct()
+    {
+        $this->technologies = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -145,5 +155,32 @@ class Project
     public function generateFileName(): string
     {
         return $this->getId() . '.jpg';
+    }
+
+    /**
+     * @return Collection<int, Technology>
+     */
+    public function getTechnologies(): Collection
+    {
+        return $this->technologies;
+    }
+
+    public function addTechnology(Technology $technology): static
+    {
+        if (!$this->technologies->contains($technology)) {
+            $this->technologies->add($technology);
+            $technology->addProject($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTechnology(Technology $technology): static
+    {
+        if ($this->technologies->removeElement($technology)) {
+            $technology->removeProject($this);
+        }
+
+        return $this;
     }
 }

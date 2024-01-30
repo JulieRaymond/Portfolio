@@ -3,9 +3,14 @@
 {% block title %}Porfolio{% endblock %}
 
 {% block body %}
+    {% for flashMessage in app.flashes('success') %}
+        <div class="flash-success">
+            {{ flashMessage }}
+        </div>
+    {% endfor %}
     {{ include('_includes/_navbar.html.twig') }}
     {{ include('_includes/_masthead.html.twig') }}
-    {{ include('_includes/_technos.htlm.twig') }}
+    {{ include('_includes/_technos.html.twig') }}
     {{ include('_includes/_portfolioGrid.html.twig') }}
     {{ include('_includes/_about.html.twig') }}
     {{ include('_includes/_team.html.twig') }}

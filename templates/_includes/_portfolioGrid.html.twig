@@ -1,3 +1,4 @@
+{#
 <!-- Portfolio Grid -->
 <section class="page-section bg-light" id="portfolio">
     <div class="container">
@@ -20,6 +21,47 @@
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">{{ project.title|raw }}</div>
+                            <div class="portfolio-caption-subheading text-muted">{{ project.intro|raw }}</div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+#}
+<!-- Portfolio Grid -->
+<section class="page-section bg-light" id="portfolio">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Mes projets</h2>
+            <h3 class="section-subheading text-muted">Voici mes projets, cliquez sur l'image pour obtenir tous les
+                détails !</h3>
+        </div>
+        <div class="row">
+            {% for project in projects %}
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item -->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal{{ project.id }}">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{{ asset('assets/uploads/portfolio/' ~ project.id ~ '.jpg') }}"
+                                 alt="Portfolio{{ project.id }}"/>
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">{{ project.title|raw }}</div>
+                            <div class="wrapper">
+                                <svg>
+                                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                                        {% for technology in project.technologies %}
+                                            {{ technology.name }}
+                                            {% if not loop.last %}, {% endif %}
+                                        {% endfor %}
+                                    </text>
+                                </svg>
+                            </div>
                             <div class="portfolio-caption-subheading text-muted">{{ project.intro|raw }}</div>
                         </div>
                     </div>
