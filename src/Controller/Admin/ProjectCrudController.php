@@ -11,7 +11,6 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 use Symfony\Component\Filesystem\Filesystem;
-use App\Repository\TechnologyRepository;
 
 class ProjectCrudController extends AbstractCrudController
 {
