@@ -48,18 +48,6 @@ class ProjectCrudController extends AbstractCrudController
 
     public function configureFields(string $pageName): iterable
     {
-        /*return [
-            IdField::new('id')->hideOnForm(), // Ne pas afficher le champ ID dans le formulaire
-            TextField::new('title'),
-            TextEditorField::new('description'),
-            TextField::new('duration'),
-            TextField::new('client'),
-            TextField::new('author'),
-            TextField::new('intro'),
-            ImageField::new('imagePath')
-                ->setUploadDir('public/assets/uploads/portfolio/') // uploader de nouvelles images
-                ->setBasePath('/assets/uploads/portfolio/') // définir l'emplacement d'origine des images
-        ];*/
         return [
             IdField::new('id')->hideOnForm(),
             TextField::new('title'),

@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="876423cc-e272-4638-94dc-9248360fc43f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/checkpoint4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkpoint4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20240130142149.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ProjectCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ProjectCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Technology.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Technology.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +240,7 @@
       <workItem from="1706612475388" duration="6051000" />
       <workItem from="1706622854877" duration="4788000" />
       <workItem from="1706631643764" duration="94000" />
-      <workItem from="1706689186327" duration="4623000" />
+      <workItem from="1706689186327" duration="5000000" />
     </task>
     <servers />
   </component>
