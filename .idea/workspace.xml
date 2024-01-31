@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="876423cc-e272-4638-94dc-9248360fc43f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c28f4611-503b-4ee5-8c8e-512de7112464.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c28f4611-503b-4ee5-8c8e-512de7112464.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20240131094842.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProjectFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ProjectFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_includes/_modals.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_modals.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +245,8 @@
       <workItem from="1706612475388" duration="6051000" />
       <workItem from="1706622854877" duration="4788000" />
       <workItem from="1706631643764" duration="94000" />
-      <workItem from="1706689186327" duration="7209000" />
+      <workItem from="1706689186327" duration="7382000" />
+      <workItem from="1706701086479" duration="2458000" />
     </task>
     <servers />
   </component>

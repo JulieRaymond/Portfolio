@@ -47,6 +47,9 @@ class Project
     #[ORM\ManyToMany(targetEntity: Technology::class, mappedBy: 'project')]
     private Collection $technologies;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $github = null;
+
     public function __construct()
     {
         $this->technologies = new ArrayCollection();
@@ -180,6 +183,18 @@ class Project
         if ($this->technologies->removeElement($technology)) {
             $technology->removeProject($this);
         }
+
+        return $this;
+    }
+
+    public function getGithub(): ?string
+    {
+        return $this->github;
+    }
+
+    public function setGithub(?string $github): static
+    {
+        $this->github = $github;
 
         return $this;
     }

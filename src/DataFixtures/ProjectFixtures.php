@@ -18,6 +18,8 @@ class ProjectFixtures extends Fixture
         $project1->setDuration('1 mois');
         $project1->setClient('Wild Code School');
         $project1->setAuthor('Julie Raymond');
+        $project1->setGithub('https://github.com/JulieRaymond/project1-trombi');
+
         $manager->persist($project1);
 
         // Projet 2
@@ -28,6 +30,8 @@ class ProjectFixtures extends Fixture
         $project2->setDuration('1 mois');
         $project2->setClient('Wild Code School');
         $project2->setAuthor('Julie Raymond');
+        $project2->setGithub('https://github.com/JulieRaymond/projet2-blog');
+
         $manager->persist($project2);
 
         // Projet 3
@@ -38,6 +42,8 @@ class ProjectFixtures extends Fixture
         $project3->setDuration('2 semaines');
         $project3->setClient('Wild Code School');
         $project3->setAuthor('Julie Raymond');
+        $project3->setGithub('https://github.com/JulieRaymond/wild-series');
+
         $manager->persist($project3);
 
         // Projet 4
@@ -48,6 +54,8 @@ class ProjectFixtures extends Fixture
         $project4->setDuration('2 mois');
         $project4->setClient('Externatic');
         $project4->setAuthor('Julie Raymond');
+        $project4->setGithub('https://github.com/WildCodeSchool-2023-09/bdx-php-p3-externatic');
+
         $manager->persist($project4);
 
         // Projet 5
@@ -58,6 +66,8 @@ class ProjectFixtures extends Fixture
         $project5->setDuration('5 jours');
         $project5->setClient('Wild Code School');
         $project5->setAuthor('Julie Raymond');
+        $project5->setGithub('https://github.com/JulieRaymond/workshop-php-poo-heracles-labour-4');
+
         $manager->persist($project5);
 
         // Projet 6
@@ -68,6 +78,8 @@ class ProjectFixtures extends Fixture
         $project6->setDuration('2 heures');
         $project6->setClient('Wild Code School');
         $project6->setAuthor('Julie Raymond');
+        $project6->setGithub('https://github.com/JulieRaymond/mapGame');
+
         $manager->persist($project6);
 
         // Projet 7
@@ -78,6 +90,8 @@ class ProjectFixtures extends Fixture
         $project7->setDuration('2 jour');
         $project7->setClient('Projet personnel');
         $project7->setAuthor('Julie Raymond');
+        $project7->setGithub('https://github.com/JulieRaymond/mon-puissance4');
+
         $manager->persist($project7);
 
         // Projet 8
@@ -88,6 +102,8 @@ class ProjectFixtures extends Fixture
         $project8->setDuration('5 heures');
         $project8->setClient('Projet personnel');
         $project8->setAuthor('Julie Raymond');
+        $project8->setGithub('https://github.com/JulieRaymond/TrelloLike');
+
         $manager->persist($project8);
 
         // Projet 9
@@ -98,14 +114,11 @@ class ProjectFixtures extends Fixture
         $project9->setDuration('4 heures');
         $project9->setClient('Projet personnel');
         $project9->setAuthor('Julie Raymond');
+        $project9->setGithub('https://github.com/JulieRaymond/dojo-drawPixel');
+
         $manager->persist($project9);
 
         $manager->flush();
-
-        /*foreach ($manager->getRepository(Project::class)->findAll() as $project) {
-            $imagePath = 'assets/uploads/portfolio/' . $project->getId() . '.jpg';
-            $project->setImagePath($imagePath);
-        }*/
 
         foreach ($manager->getRepository(Project::class)->findAll() as $project) {
             $imagePath = $project->getId() . '.jpg';

@@ -35,6 +35,10 @@
                                         <strong>Auteur:</strong>
                                         {{ project.author|raw }}
                                     </li>
+                                    <li>
+                                        <strong>Github:</strong>
+                                        <a href="{{ project.github|raw }}">{{ project.title|raw }}</a>
+                                    </li>
                                 </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                         type="button">
