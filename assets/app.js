@@ -1,4 +1,5 @@
 import './bootstrap.js';
+import './styles/app.css';
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -45,11 +46,36 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-/*
- * Welcome to your app's main JavaScript file!
- *
- * This file will be included onto the page via the importmap() Twig function,
- * which should already be in your base.html.twig.
- */
-import './styles/app.css';
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Filtre les projets au chargement de la page
+    filterProjects('all');
+
+    // Ajoute un gestionnaire d'événement aux boutons de filtrage
+    document.querySelectorAll('#portfolio .btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            // Retire la classe active de tous les boutons
+            document.querySelectorAll('#portfolio .btn').forEach(function (btn) {
+                btn.classList.remove('active');
+            });
+
+            // Ajoute la classe active au bouton cliqué
+            btn.classList.add('active');
+
+            // Filtre les projets en fonction de la technologie sélectionnée
+            filterProjects(btn.getAttribute('data-filter'));
+        });
+    });
+
+    // Fonction pour filtrer les projets
+    function filterProjects(category) {
+        document.querySelectorAll('#portfolio-items .col-lg-4').forEach(function (item) {
+            let categories = item.getAttribute('data-categories').split(' ');
+            if (category === 'all' || categories.includes(category)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+});
