@@ -104,4 +104,6 @@ Vous pouvez contribuer à ce projet en suivant les étapes suivantes :
 
 ## Contact
 
-Vous pouvez me contacter via LinkedIn[]('www.linkedin.com/in/julie-raymond-dev') ou GitHub en suivant les liens.
+Vous pouvez me contacter, en suivant les liens, via :
+- [LinkedIn](https://www.linkedin.com/in/julie-raymond-5b391a162/)
+- [GitHub](https://github.com/JulieRaymond)
