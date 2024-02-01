@@ -7,11 +7,6 @@
     <list default="true" id="876423cc-e272-4638-94dc-9248360fc43f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20240131143733.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProjectFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ProjectFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_includes/_team.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_team.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +244,7 @@
       <workItem from="1706689186327" duration="7382000" />
       <workItem from="1706701086479" duration="2628000" />
       <workItem from="1706712751463" duration="1036000" />
-      <workItem from="1706774164398" duration="2416000" />
+      <workItem from="1706774164398" duration="2710000" />
     </task>
     <servers />
   </component>
