@@ -47,6 +47,7 @@ garantit une expérience utilisateur à jour et pertinente.
 - Intégration de Bootstrap pour le design et la mise en page.
 - Utilisation de Doctrine/doctrine-bundle pour la gestion de la base de données.
 - Intégration d'Easycorp/easyadmin-bundle pour une administration simplifiée du back-office.
+- Utilisation de AOS - Animate On Scroll - pour les effets visuels lors du scroll.
 
 ## Installation
 
