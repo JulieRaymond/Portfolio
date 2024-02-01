@@ -12545,7 +12545,7 @@ header.masthead .masthead-subheading {
 }
 
 header.masthead .masthead-heading {
-    font-size: 3.25rem;
+    font-size: 2.25rem;
     font-weight: 700;
     line-height: 3.25rem;
     margin-bottom: 2rem;
@@ -13013,3 +13013,39 @@ svg text {
     background-color: #FFFFFF
 }
 
+.our-services {
+    margin-top: 75px;
+    padding-bottom: 30px;
+    padding: 0 60px;
+    min-height: 198px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17);
+}
+
+.our-services .icon {
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.team-member .fa-stack-2x {
+    color: #fff; /* Adjust the color as needed */
+}
+
+.team-member:hover h4,
+.team-member:hover p {
+    color: #fff;
+}
+
+.team-member:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #337BF9 0%, #8AB3FB 100%);
+}
+
+.customBtn{
+    margin-top: 2rem;
+}

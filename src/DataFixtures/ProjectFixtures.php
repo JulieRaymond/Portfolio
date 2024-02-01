@@ -12,7 +12,7 @@ class ProjectFixtures extends Fixture
     {
         // Projet 1
         $project1 = new Project();
-        $project1->setTitle('Trombinoscope et jeu Mémory');
+        $project1->setTitle('Trombinoscope');
         $project1->setIntro('Projet 1 - étude bac +2');
         $project1->setDescription('Description du projet 1');
         $project1->setDuration('1 mois');
