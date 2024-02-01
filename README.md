@@ -101,3 +101,7 @@ Vous pouvez contribuer à ce projet en suivant les étapes suivantes :
 3. Commiter les changements (`git commit -am 'Ajouter une nouvelle fonctionnalité'`)
 4. Pousser la branche (`git push origin feature/nouvelle-fonctionnalite`)
 5. Ouvrir une Pull Request
+
+## Contact
+
+Vous pouvez me contacter via LinkedIn[]('www.linkedin.com/in/julie-raymond-dev') ou GitHub en suivant les liens.
