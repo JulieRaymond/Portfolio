@@ -1,5 +1,6 @@
 import './bootstrap.js';
 import './styles/app.css';
+AOS.init();
 
 window.addEventListener('DOMContentLoaded', event => {
 
