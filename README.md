@@ -54,7 +54,7 @@ garantit une expérience utilisateur à jour et pertinente.
 1. Cloner le dépôt :
 
 ```bash
-git clone https://github.com/votre-utilisateur/votre-projet.git
+git clone https://github.com/JulieRaymond/Portfolio.git
 ```
 
 2. Installer les dépendances :
