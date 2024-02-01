@@ -10,6 +10,7 @@ Un projet Symfony pour la gestion de projets sur mon Portfolio.
 - [Configuration](#configuration)
 - [Utilisation](#utilisation)
 - [Contribution](#contribution)
+- [Contact](#contact)
 
 ## Présentation
 
