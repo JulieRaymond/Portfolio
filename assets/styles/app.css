@@ -396,7 +396,7 @@ button:not(:disabled),
 }
 
 textarea {
-    resize: vertical;
+    resize : none;
 }
 
 fieldset {
