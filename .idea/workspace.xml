@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="876423cc-e272-4638-94dc-9248360fc43f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20240131160921.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProjectFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ProjectFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/TechnologyFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/TechnologyFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ProjectRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProjectRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TechnologyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TechnologyRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +247,7 @@
       <workItem from="1706712751463" duration="1036000" />
       <workItem from="1706774164398" duration="3091000" />
       <workItem from="1706781065793" duration="6530000" />
-      <workItem from="1706860634015" duration="607000" />
+      <workItem from="1706860634015" duration="751000" />
     </task>
     <servers />
   </component>
