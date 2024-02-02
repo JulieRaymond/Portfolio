@@ -10,6 +10,7 @@ class ProjectFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
+        // Création et chargement de données fictives pour la base de données
         // Projet 1
         $project1 = new Project();
         $project1->setTitle('Trombinoscope');
@@ -120,11 +121,13 @@ class ProjectFixtures extends Fixture
 
         $manager->flush();
 
+        // Attribution des images aux projets en fonction de leur ID
         foreach ($manager->getRepository(Project::class)->findAll() as $project) {
             $imagePath = $project->getId() . '.jpg';
             $project->setImagePath($imagePath);
         }
 
+        // Sauvegarde des changements dans la base de données
         $manager->flush();
     }
 }

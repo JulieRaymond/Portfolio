@@ -17,35 +17,40 @@ class HomeController extends AbstractController
     #[Route('/', name: 'app_home')]
     public function index(Request $request, MailerInterface $mailer, ProjectRepository $projectRepository, TechnologyRepository $technologyRepository): Response
     {
-        // Récupére vos projets depuis la base de données
+        // Récupération de tous les projets depuis la base de données
         $projects = $projectRepository->findAll();
 
-        // Récupérez toutes les technologies depuis la base de données
+        // Récupération de toutes les technologies depuis la base de données
         $allTechnologies = $technologyRepository->findAll();
 
-        // Créé le formulaire de contact
+        // Création du formulaire de contact
         $form = $this->createForm(ContactType::class);
 
-        // Gére la soumission du formulaire
+        // Gestion de la soumission du formulaire
         $form->handleRequest($request);
 
+        // Vérification si le formulaire a été soumis et est valide
         if ($form->isSubmitted() && $form->isValid()) {
             $contactFormData = $form->getData();
 
+            // Création d'un objet Email avec les données du formulaire
             $message = (new Email())
                 ->from($contactFormData['email'])
                 ->to('your@mail.com')
                 ->subject('You got mail')
                 ->text('Sender: ' . $contactFormData['email'] . PHP_EOL . $contactFormData['message'], 'text/plain');
+
+            // Envoi du message via le service de messagerie
             $mailer->send($message);
 
+            // Ajout d'un message flash pour informer l'utilisateur de la réussite de l'envoi
             $this->addFlash('success', 'Votre message a bien été envoyé, merci de votre prise de contact');
 
-            // Reste sur la page d'accueil après l'envoi du formulaire
+            // Redirection vers la page d'accueil après l'envoi du message
             return $this->redirectToRoute('app_home');
         }
 
-        // Passez les projets et le formulaire à la vue Twig
+        // Passage des projets, de toutes les technologies et du formulaire à la vue Twig
         return $this->render('home/index.html.twig', [
             'projects' => $projects,
             'allTechnologies' => $allTechnologies,

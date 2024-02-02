@@ -24,9 +24,10 @@ class TechnologyFixtures extends Fixture
         $javascript->setName('Javascript');
         $manager->persist($javascript);
 
+        // Sauvegarde des technologies dans la base de données
         $manager->flush();
 
-        // Projets
+        // Attribution des technologies aux projets en fonction de leur ID
         for ($i = 1; $i <= 9; $i++) {
             $project = $manager->getRepository(Project::class)->find($i);
 
@@ -38,6 +39,7 @@ class TechnologyFixtures extends Fixture
                 $project->addTechnology($javascript);
             }
 
+            // Sauvegarde des changements dans la base de données
             $manager->flush();
         }
     }
